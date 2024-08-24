@@ -1,0 +1,67 @@
+.App {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .light-mode {
+    background-color: #f5f5f5;
+    color: #000;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  .generate-button,
+  .theme-toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  .generate-button:hover,
+  .theme-toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .mnemonic-container {
+    margin: 20px auto;
+  }
+  
+  .mnemonic-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .wallet-section {
+    margin: 20px auto;
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .wallet-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .wallet-section div {
+    margin: 5px 0;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+  }
+  
