@@ -1,79 +1,71 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html, #root {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-  }
-  
-  .App {
+.App {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
+    margin: 0;
     padding: 20px;
-    text-align: center;
-  }
-  
-  .dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  
-  .light-mode {
-    background-color: #f9f9f9;
-    color: #121212;
-  }
-  
-  .generate-button, .theme-toggle-button {
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffcc00;
-    color: #121212;
-    cursor: pointer;
-  }
-  
-  .mnemonic-container {
-    margin-top: 20px;
-    width: 100%;
-  }
-  
-  .mnemonic-input {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #888;
-    border-radius: 5px;
-    text-align: center;
+    box-sizing: border-box;
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    position: relative; /* Positioning for footer */
   }
   
   .wallet-section {
     margin: 20px 0;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #1E90FF; /* Blue border for creativity */
+    border-radius: 8px;
+    background-color: rgba(30, 144, 255, 0.1); /* Light blue background */
+    width: 80%; /* Full width for better visibility */
+  }
+  
+  .wallet-title {
+    color: #1E90FF; /* Blue title */
+    font-weight: bold;
+  }
+  
+  .generate-button {
+    background-color: #1E90FF; /* Dodger Blue */
+    color: black;
+    padding: 15px 30px; /* Increased size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s;
+  }
+  
+  .generate-button:hover {
+    background-color: #00BFFF; /* Deep Sky Blue */
+  }
+  
+  .mnemonic-container {
+    margin: 20px 0;
+    width: 100%; /* Full width for input */
+  }
+  
+  .mnemonic-input {
+    width: 100%; /* Take full width */
+    padding: 15px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
   .footer {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 12px;
-    color: #888;
+    position: absolute; /* Positioning the footer */
+    bottom: 20px; /* Distance from bottom */
+    left: 20px; /* Distance from left */
+    text-align: left;
   }
+  
+  @media (min-width: 768px) {
+    .App {
+      height: 100vh;
+    }
+  }
+  
   
