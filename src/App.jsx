@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { generateMnemonic } from 'bip39';
 import { SolanaWallet } from './SolanaWallet'; // Ensure correct path
 import { EthWallet } from './EthWallet'; // Ensure correct path
@@ -6,7 +6,7 @@ import './web3-wallet.css';
 
 function App() {
   const [mnemonic, setMnemonic] = useState("");
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true); // Default to dark mode
 
   const createMnemonic = async () => {
     const mn = await generateMnemonic();
@@ -55,6 +55,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
